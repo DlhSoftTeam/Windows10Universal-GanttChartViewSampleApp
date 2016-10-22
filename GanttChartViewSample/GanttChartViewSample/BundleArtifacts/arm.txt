@@ -1,0 +1,2 @@
+MainPackage=C:\Users\SDolha\Source\Repos\Windows10Universal-GanttChartViewSampleApp\GanttChartViewSample\GanttChartViewSample\bin\ARM\Debug\GanttChartViewSample_1.0.0.0_ARM_Debug.appx
+SymbolPackage=C:\Users\SDolha\Source\Repos\Windows10Universal-GanttChartViewSampleApp\GanttChartViewSample\GanttChartViewSample\AppPackages\GanttChartViewSample_1.0.0.0_Debug_Test\GanttChartViewSample_1.0.0.0_ARM_Debug.appxsym
