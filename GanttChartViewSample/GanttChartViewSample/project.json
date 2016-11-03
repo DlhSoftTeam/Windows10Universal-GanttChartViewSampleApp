@@ -1,6 +1,6 @@
 ﻿{
   "dependencies": {
-    "DlhSoft.GanttChartModernLibrary": "5.0.22.21",
+    "DlhSoft.GanttChartModernLibrary": "5.0.22.23",
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.0.0"
   },
   "frameworks": {
