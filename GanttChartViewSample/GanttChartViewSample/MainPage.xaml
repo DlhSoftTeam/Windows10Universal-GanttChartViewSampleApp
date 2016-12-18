@@ -8,6 +8,15 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <!-- Items collection is initialized in code behind. -->
         <pdgcc:GanttChartView x:Name="GanttChartView"/>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" Padding="4">
+            <Button Content="Level resources" Click="LevelResourcesButton_Click" Margin="4"/>
+            <Button Content="Optimize work" Click="OptimizeWorkButton_Click" Margin="4"/>
+        </StackPanel>
     </Grid>
 </Page>

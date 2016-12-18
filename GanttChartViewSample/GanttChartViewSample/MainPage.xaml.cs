@@ -148,6 +148,22 @@ namespace GanttChartViewSample
             //         dialog.ShowAsync();
             //     }
             // };
+
+            // Optionally, set OperationsCode script statements to prepare support for calling internal component operations.
+            GanttChartView.OperationsCode = @"
+                function levelResources(dateExpression) { control.levelResources(false, eval(dateExpression)); }
+                function optimizeWork() { control.optimizeWork(); }";
+        }
+
+        // Call ExecuteOperation to perform internal component operations mapped to custom script functions in OperationsCode definition.
+        private void LevelResourcesButton_Click(object sender, RoutedEventArgs e)
+        {
+            // Level resources starting at 10th day of current month.
+            GanttChartView.ExecuteOperation("levelResources", string.Format("new Date({0}, {1}-1, {2})", year, month, 10));
+        }
+        private void OptimizeWorkButton_Click(object sender, RoutedEventArgs e)
+        {
+            GanttChartView.ExecuteOperation("optimizeWork");
         }
     }
 }
