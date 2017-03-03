@@ -13,7 +13,13 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         <!-- Items collection is initialized in code behind. -->
-        <pdgcc:GanttChartView x:Name="GanttChartView"/>
+        <pdgcc:GanttChartView x:Name="GanttChartView"
+                              CompletedBarHeight="10.5" CompletedBarMargin="0"
+                              StandardBarFill="White" StandardBarStroke="#005c9e" 
+                              StandardCompletedBarFill="#005c9e" StandardCompletedBarStroke="#005c9e"
+                              MilestoneBarFill="#e31d3b" MilestoneBarStroke="#005c9e"
+                              SummaryBarFill="#606060" SummaryBarStroke="#505050"
+                              DependencyLineStroke="#005c9e"/>
         <StackPanel Grid.Row="1" Orientation="Horizontal" Padding="4">
             <Button Content="Level resources" Click="LevelResourcesButton_Click" Margin="4"/>
             <Button Content="Optimize work" Click="OptimizeWorkButton_Click" Margin="4"/>
